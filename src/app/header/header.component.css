@@ -1,0 +1,171 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--brand-color);
+}
+
+.patient-visit {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+.nav-brand-logo {
+  height: 60px;
+}
+
+.header-container .header-nav-links {
+  margin-left: auto;
+}
+
+.header-container .header-nav-links,
+.header-container .header-contact-links {
+  display: none;
+}
+
+.header-link {
+  text-transform: uppercase;
+  color: var(--brand-color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.header-link.contact-reg {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--brand-color);
+}
+
+.header-link.contact-inv {
+  color: white;
+  background-color: var(--brand-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2rem;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin: 4px 0;
+}
+
+.animation-bar1 {
+  animation-name: flipBar1;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.animation-bar2 {
+  animation-name: fadeBar2;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.animation-bar3 {
+  animation-name: flipBar3;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 6px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -6px);
+  }
+}
+
+.mobile-nav {
+  width: 100%;
+  transform: translateX(100%);
+  background-color: white;
+  transition: transform 0.5s ease;
+}
+
+.drawer-closed {
+  display: none;
+}
+
+.mobile-nav.drawer-open {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(0);
+}
+
+.mobile-nav .mobile-header-links,
+.mobile-nav .mobile-contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav a {
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-nav {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  .header-container .header-nav-links,
+  .header-container .header-contact-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-nav.drawer-open {
+    transform: translateX(100%);
+  }
+}

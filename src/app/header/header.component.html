@@ -1,0 +1,36 @@
+<header>
+  <p class="patient-visit">Patient visits by Appointment Only. Same Day appointments can be made by Phone call.</p>
+  <div class="header-container">
+    <img src="cfim-logo-updated-large-narrow.jpg" class="nav-brand-logo"
+      alt="California Functional Internal Medicine logo">
+    <div class="header-nav-links">
+      <a href="#about" class="header-link">About</a>
+      <a href="#services" class="header-link">Services</a>
+      <a href="#reviews" class="header-link">Reviews</a>
+      <a href="#contact" class="header-link">Contact</a>
+    </div>
+    <div class="header-contact-links">
+      <a href="tel:9493395272" class="header-link contact-reg">(949)-339-5272</a>
+      <a href="#book-online" class="header-link contact-inv">Book Online</a>
+      <a href="#health-store" class="header-link contact-inv">Health Store</a>
+    </div>
+    <div class="hamburger" (click)="toggleHamburger()">
+      <div class="bar1" [ngClass]="{'animation-bar1': isToggled}"></div>
+      <div class="bar2" [ngClass]="{'animation-bar2': isToggled}"></div>
+      <div class="bar3" [ngClass]="{'animation-bar3': isToggled}"></div>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" [ngClass]="{'drawer-open': isToggled, 'drawer-closed': !isToggled}">
+  <div class="mobile-header-links">
+    <a href="" class="header-link">About</a>
+    <a href="" class="header-link">Services</a>
+    <a href="" class="header-link">Reviews</a>
+    <a href="" class="header-link">Contact</a>
+  </div>
+  <div class="mobile-contact-links">
+    <a href="tel:9493395272" class="header-link contact-reg">(949)-339-5272</a>
+    <a href="#book-online" class="header-link contact-inv">Book Online</a>
+    <a href="#health-store" class="header-link contact-inv">Health Store</a>
+  </div>
+</nav>
