@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--brand-color);
+  color: white;
+  column-gap: 3rem;
+  padding: 0 2rem;
+}
+
+section.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about,
+.about a {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  width: fit-content;
+  color: white;
+}
