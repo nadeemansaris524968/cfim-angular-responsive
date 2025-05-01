@@ -6,6 +6,9 @@
   color: white;
   column-gap: 3rem;
   padding: 0 2rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 section.about {
