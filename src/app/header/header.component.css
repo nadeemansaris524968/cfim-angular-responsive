@@ -117,6 +117,7 @@ header {
   transform: translateX(100%);
   background-color: white;
   transition: transform 0.5s ease;
+  box-shadow: 4px 4px 20px var(--brand-color);
 }
 
 .drawer-closed {

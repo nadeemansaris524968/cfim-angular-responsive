@@ -10,6 +10,7 @@
     'photo-title'
     'para-1'
     'learn-more';
+  column-gap: 1rem;
 }
 
 .welcome-heading {
@@ -77,13 +78,8 @@
 }
 
 @media only screen and (min-width: 850px) {
-  .welcome-heading {
-    font-size: 2.25rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
   .welcome {
+    margin: 4rem auto;
     box-sizing: border-box;
     grid-template-areas:
       'welcome-heading profile-photo'
@@ -93,13 +89,13 @@
       '. profile-photo'
       '. photo-title';
   }
-
   .welcome-heading {
+    font-size: 2.25rem;
     margin-top: 0;
   }
 
   .welcome-subheading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .para-1 {
@@ -111,17 +107,6 @@
 }
 
 @media only screen and (min-width: 1300px) {
-  .welcome {
-    box-sizing: border-box;
-    grid-template-areas:
-      'welcome-heading profile-photo  profile-photo'
-      'welcome-subheading profile-photo  profile-photo'
-      'para-1 profile-photo profile-photo'
-      'learn-more profile-photo profile-photo'
-      '. profile-photo  profile-photo'
-      '. photo-title photo-title ';
-  }
-
   .welcome-heading {
     font-size: 2.5rem;
   }
@@ -129,5 +114,17 @@
   .welcome-subheading {
     font-size: 1.25rem;
     font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .welcome {
+    column-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .welcome {
+    width: 70%;
   }
 }
