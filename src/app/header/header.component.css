@@ -5,6 +5,7 @@ header {
   width: 100%;
   z-index: 1;
   background-color: var(--brand-color);
+  box-shadow: 4px 4px 10px var(--brand-color);
 }
 
 .patient-visit {
