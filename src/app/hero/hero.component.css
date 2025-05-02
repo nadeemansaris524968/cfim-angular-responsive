@@ -1,5 +1,5 @@
 .hero-container {
-  height: 500px;
+  height: 300px;
   background-image: url('/hero.jpg');
   background-size: cover;
   background-position: left;
@@ -10,31 +10,69 @@
 }
 
 .hero-headings {
-  padding: 1rem;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .hero-headings h1 {
-  font-size: var(--h1-font-size);
-  text-transform: uppercase;
-  margin: 1rem;
-  font-weight: 600;
+  font-size: 24px;
 }
 
 .hero-headings h2 {
-  font-size: var(--h2-font-size);
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-@media only screen and (min-width: 320px) {
-  .hero-container {
-    height: 300px;
+@media only screen and (min-width: 850px) {
+  .hero-headings {
+    width: 80%;
+  }
+
+  .hero-headings h1 {
+    font-size: 30px;
+  }
+
+  .hero-headings h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero-headings {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .hero-headings {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero-headings {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .hero-headings {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .hero-headings h1 {
+    font-size: var(--h2-font-size);
+  }
+
+  .hero-headings h2 {
+    font-size: var(--h3-font-size);
+    font-weight: 300;
   }
 }
