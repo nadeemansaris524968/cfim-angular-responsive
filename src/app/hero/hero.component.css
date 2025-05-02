@@ -1,5 +1,5 @@
 .hero-container {
-  height: 300px;
+  height: 350px;
   background-image: url('/hero.jpg');
   background-size: cover;
   background-position: left;
@@ -28,6 +28,10 @@
 }
 
 @media only screen and (min-width: 850px) {
+  .hero-container {
+    height: 400px;
+  }
+
   .hero-headings {
     width: 80%;
   }
@@ -43,36 +47,69 @@
 }
 
 @media only screen and (min-width: 1050px) {
+  .hero-container {
+    height: 450px;
+  }
+
   .hero-headings {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 1300px) {
+  .hero-container {
+    height: 500px;
+  }
+
   .hero-headings {
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 1600px) {
+  .hero-container {
+    height: 550px;
+  }
+
   .hero-headings {
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 1700px) {
+  .hero-container {
+    height: 600px;
+  }
+
   .hero-headings {
     padding: 1rem;
   }
-}
 
-@media only screen and (min-width: 1800px) {
   .hero-headings h1 {
     font-size: var(--h2-font-size);
   }
 
   .hero-headings h2 {
     font-size: var(--h3-font-size);
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .hero-container {
+    height: 650px;
+  }
+
+  .hero-headings {
+    padding: 2rem;
+  }
+
+  .hero-headings h1 {
+    font-size: var(--h1-font-size);
+  }
+
+  .hero-headings h2 {
+    font-size: var(--h2-font-size);
     font-weight: 300;
   }
 }
