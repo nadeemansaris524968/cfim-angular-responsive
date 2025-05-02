@@ -1,0 +1,51 @@
+section {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(
+      315deg,
+      #00ffff2e 92%,
+      #073aff00 100%
+    ),
+    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #236daf 0%, #073affff 100%),
+    radial-gradient(160% 154% at 711px -303px, #236 0%, #073affff 100%);
+}
+
+section h2,
+section h3 {
+  color: white;
+}
+
+section h2 {
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+section h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  width: 90%;
+  text-align: center;
+  font-size: var(--h3-font-size);
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 769px) {
+  section h3 {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  section h3 {
+    width: 60%;
+  }
+}
