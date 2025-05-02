@@ -101,7 +101,6 @@
   .para-1 {
     margin-top: 0;
     font-size: 1.25rem;
-    padding: 1rem;
     letter-spacing: 2px;
   }
 }
@@ -123,8 +122,8 @@
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1900px) {
   .welcome {
-    width: 70%;
+    width: 60%;
   }
 }
