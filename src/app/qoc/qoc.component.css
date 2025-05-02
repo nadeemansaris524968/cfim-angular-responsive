@@ -1,0 +1,36 @@
+.qoc {
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.para-1,
+.para-2 {
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.qoc-heading {
+  font-size: var(--h2-font-size);
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.qoc-subheading {
+  letter-spacing: 2px;
+}
+
+.qoc span {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1440px) {
+  .qoc {
+    width: 70%;
+  }
+}
