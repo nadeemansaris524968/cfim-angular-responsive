@@ -9,13 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { CardsComponent } from './cards/cards.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MissionComponent } from './mission/mission.component';
+import { QocComponent } from './qoc/qoc.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent, QocComponent],
   imports: [BrowserModule],
   bootstrap: [AppComponent],
 })
