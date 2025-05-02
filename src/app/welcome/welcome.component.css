@@ -1,0 +1,133 @@
+.welcome {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-areas:
+    'welcome-heading'
+    'welcome-subheading'
+    'profile-photo'
+    'photo-title'
+    'para-1'
+    'learn-more';
+}
+
+.welcome-heading {
+  font-size: 1.9rem;
+  margin-bottom: 0;
+  grid-area: welcome-heading;
+}
+
+.welcome-subheading {
+  font-size: 1rem;
+  grid-area: welcome-subheading;
+  font-weight: 600;
+}
+
+.profile-photo {
+  grid-area: profile-photo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.profile-photo:hover img {
+  transform: scale(1.1);
+}
+
+.photo-title {
+  grid-area: photo-title;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--brand-color);
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+}
+
+.para-1 {
+  grid-area: para-1;
+  text-align: justify;
+}
+
+.learn-more {
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  color: var(--brand-color);
+  grid-area: learn-more;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 1px solid var(--brand-color);
+  box-shadow: 2px 2px 10px var(--brand-color);
+}
+
+.learn-more:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 850px) {
+  .welcome-heading {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .welcome {
+    box-sizing: border-box;
+    grid-template-areas:
+      'welcome-heading profile-photo'
+      'welcome-subheading profile-photo'
+      'para-1 profile-photo'
+      'learn-more profile-photo'
+      '. profile-photo'
+      '. photo-title';
+  }
+
+  .welcome-heading {
+    margin-top: 0;
+  }
+
+  .welcome-subheading {
+    font-size: 1.2rem;
+  }
+
+  .para-1 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    padding: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .welcome {
+    box-sizing: border-box;
+    grid-template-areas:
+      'welcome-heading profile-photo  profile-photo'
+      'welcome-subheading profile-photo  profile-photo'
+      'para-1 profile-photo profile-photo'
+      'learn-more profile-photo profile-photo'
+      '. profile-photo  profile-photo'
+      '. photo-title photo-title ';
+  }
+
+  .welcome-heading {
+    font-size: 2.5rem;
+  }
+
+  .welcome-subheading {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
