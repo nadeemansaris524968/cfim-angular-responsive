@@ -68,6 +68,7 @@
   justify-self: center;
   align-self: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--brand-color);
   grid-area: learn-more;
   padding: 1rem;

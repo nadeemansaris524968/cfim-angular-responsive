@@ -1,0 +1,60 @@
+section {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(
+      315deg,
+      #00ffff2e 92%,
+      #073aff00 100%
+    ),
+    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #236daf 0%, #073affff 100%),
+    radial-gradient(160% 154% at 711px -303px, #236 0%, #073affff 100%);
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h2,
+.container h3 {
+  color: white;
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: 300;
+}
+
+a {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--brand-color);
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 425px) {
+  h2 {
+    border-bottom: 2px solid white;
+  }
+}

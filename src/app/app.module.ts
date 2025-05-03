@@ -14,13 +14,15 @@ import { ServicesOfferedComponent } from './services-offered/services-offered.co
 import { CredentialsComponent } from './credentials/credentials.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { LocationComponent } from './location/location.component';
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
+import { SeenTodayComponent } from './seen-today/seen-today.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent, QocComponent, ServicesOfferedComponent, CredentialsComponent, InsuranceComponent, LocationComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent, QocComponent, ServicesOfferedComponent, CredentialsComponent, InsuranceComponent, LocationComponent, ServiceDetailComponent, SeenTodayComponent],
   imports: [BrowserModule],
   bootstrap: [AppComponent],
 })
