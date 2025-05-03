@@ -27,4 +27,9 @@ h4,
 h5,
 h6 {
   color: var(--brand-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-style: italic;
 }

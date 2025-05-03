@@ -1,9 +1,4 @@
-section {
-  margin: 3rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.insurance {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: repeating-linear-gradient(
@@ -14,38 +9,40 @@ section {
     radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
     radial-gradient(160% 154% at 711px -303px, #236daf 0%, #073affff 100%),
     radial-gradient(160% 154% at 711px -303px, #236 0%, #073affff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 5rem;
 }
 
-section h2,
-section h3 {
+.insurance h2 {
+  font-size: var(--h2-font-size);
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  border-bottom: 2px solid white;
+}
+
+.insurance h3 {
+  font-size: var(--h3-font-size);
   color: white;
 }
 
-section h2 {
-  font-size: var(--h2-font-size);
-  text-transform: uppercase;
-  border-bottom: 2px solid white;
-  margin-top: 2rem;
-  font-weight: 400;
+.insurance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-section h3 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  width: 90%;
-  text-align: center;
-  font-size: var(--h3-font-size);
-  font-weight: 300;
+.insurance-grid article {
+  background-color: white;
+  width: 200px;
+  margin: 1rem;
+  box-sizing: border-box;
 }
 
-@media only screen and (min-width: 769px) {
-  section h3 {
-    width: 70%;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  section h3 {
-    width: 50%;
-  }
+.insurance-logo img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
 }

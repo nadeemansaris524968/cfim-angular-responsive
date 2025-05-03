@@ -12,13 +12,14 @@ import { MissionComponent } from './mission/mission.component';
 import { QocComponent } from './qoc/qoc.component';
 import { ServicesOfferedComponent } from './services-offered/services-offered.component';
 import { CredentialsComponent } from './credentials/credentials.component';
+import { InsuranceComponent } from './insurance/insurance.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent, QocComponent, ServicesOfferedComponent, CredentialsComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, MainComponent, FooterComponent, CardsComponent, WelcomeComponent, MissionComponent, QocComponent, ServicesOfferedComponent, CredentialsComponent, InsuranceComponent],
   imports: [BrowserModule],
   bootstrap: [AppComponent],
 })
