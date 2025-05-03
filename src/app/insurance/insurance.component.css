@@ -11,38 +11,93 @@
     radial-gradient(160% 154% at 711px -303px, #236 0%, #073affff 100%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  margin-bottom: 5rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.insurance h2,
+.insurance h3 {
+  color: white;
 }
 
 .insurance h2 {
-  font-size: var(--h2-font-size);
-  color: white;
   text-transform: uppercase;
+  font-size: var(--h2-font-size);
   margin: 0;
   border-bottom: 2px solid white;
 }
 
 .insurance h3 {
   font-size: var(--h3-font-size);
-  color: white;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .insurance-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .insurance-grid article {
   background-color: white;
-  width: 200px;
-  margin: 1rem;
   box-sizing: border-box;
+  padding: 1rem;
+}
+
+.insurance-logo {
+  width: 100%;
 }
 
 .insurance-logo img {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .insurance-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .insurance h3 {
+    width: 80%;
+  }
+  .insurance-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .insurance h3 {
+    width: 70%;
+  }
+  .insurance-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .insurance h3 {
+    width: 60%;
+  }
+  .insurance-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .insurance-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 60%;
+  }
 }

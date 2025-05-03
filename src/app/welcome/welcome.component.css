@@ -19,13 +19,13 @@
 }
 
 .welcome-heading {
-  font-size: 1.9rem;
+  font-size: var(--h2-font-size);
   margin-bottom: 0;
   grid-area: welcome-heading;
 }
 
 .welcome-subheading {
-  font-size: 1rem;
+  font-size: var(--h3-font-size);
   grid-area: welcome-subheading;
   font-weight: 600;
 }
@@ -95,12 +95,8 @@
       '. photo-title';
   }
   .welcome-heading {
-    font-size: 2.25rem;
+    font-size: var(--h1-font-size);
     margin-top: 0;
-  }
-
-  .welcome-subheading {
-    font-size: 1.1rem;
   }
 
   .para-1 {
