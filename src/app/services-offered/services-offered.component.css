@@ -73,7 +73,6 @@ section h2 {
 
 @media only screen and (min-width: 1900px) {
   .services-offered-container {
-    width: 70%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
