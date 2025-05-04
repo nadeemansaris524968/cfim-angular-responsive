@@ -14,6 +14,18 @@ import { MissionComponent } from './mission/mission.component';
 import { QocComponent } from './qoc/qoc.component';
 import { SeenTodayComponent } from './seen-today/seen-today.component';
 import { ServicesOfferedComponent } from './services-offered/services-offered.component';
+import { AllergiesComponent } from './services/allergies/allergies.component';
+import { CholestrolComponent } from './services/cholestrol/cholestrol.component';
+import { DiabetesComponent } from './services/diabetes/diabetes.component';
+import { FunctionalMedicineComponent } from './services/functional-medicine/functional-medicine.component';
+import { HeavyMetalComponent } from './services/heavy-metal/heavy-metal.component';
+import { HormonalImbalancesComponent } from './services/hormonal-imbalances/hormonal-imbalances.component';
+import { HypertensionComponent } from './services/hypertension/hypertension.component';
+import { LeakyGutComponent } from './services/leaky-gut/leaky-gut.component';
+import { LymeComponent } from './services/lyme/lyme.component';
+import { MoldComponent } from './services/mold/mold.component';
+import { PrimaryCareComponent } from './services/primary-care/primary-care.component';
+import { WeightLossComponent } from './services/weight-loss/weight-loss.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
@@ -35,6 +47,18 @@ const appRoutes: Routes = [
     ServicesOfferedComponent,
     CredentialsComponent,
     InsuranceComponent,
+    PrimaryCareComponent,
+    WeightLossComponent,
+    MoldComponent,
+    LymeComponent,
+    LeakyGutComponent,
+    HypertensionComponent,
+    HormonalImbalancesComponent,
+    HeavyMetalComponent,
+    FunctionalMedicineComponent,
+    DiabetesComponent,
+    CholestrolComponent,
+    AllergiesComponent,
     LocationComponent,
     SeenTodayComponent,
   ],
