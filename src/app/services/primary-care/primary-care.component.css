@@ -112,6 +112,10 @@ section {
 }
 
 @media only screen and (min-width: 1440px) {
+  .main {
+    width: 70%;
+  }
+
   .intro-container {
     grid-template-columns: 3fr 1fr;
     column-gap: 1.5rem;
@@ -124,6 +128,6 @@ section {
 
 @media only screen and (min-width: 2560px) {
   .main {
-    width: 60%;
+    width: 50%;
   }
 }
