@@ -9,6 +9,7 @@
 .location-container h2 {
   font-size: var(--h2-font-size);
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .location-container a {
