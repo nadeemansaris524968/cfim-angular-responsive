@@ -23,6 +23,7 @@ section h2 {
 }
 
 .service-card {
+  cursor: pointer;
   display: flex;
   width: 100%;
   flex-direction: column;

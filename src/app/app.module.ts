@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { CredentialsComponent } from './credentials/credentials.component';
@@ -30,8 +30,58 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
+  { path: 'services/primary-care', component: PrimaryCareComponent },
+  {
+    path: 'services/functional-medicine',
+    component: FunctionalMedicineComponent,
+  },
+  {
+    path: 'services/mold-toxicity',
+    component: MoldComponent,
+  },
+  {
+    path: 'services/leaky-gut',
+    component: LeakyGutComponent,
+  },
+  {
+    path: 'services/hypertension',
+    component: HypertensionComponent,
+  },
+  {
+    path: 'services/diabetes',
+    component: DiabetesComponent,
+  },
+  {
+    path: 'services/cholestrol',
+    component: CholestrolComponent,
+  },
+  {
+    path: 'services/heavy-metal-toxicity',
+    component: HeavyMetalComponent,
+  },
+  {
+    path: 'services/hormonal-imbalances',
+    component: HormonalImbalancesComponent,
+  },
+  {
+    path: 'services/allergies',
+    component: AllergiesComponent,
+  },
+  {
+    path: 'services/lyme-disease',
+    component: LymeComponent,
+  },
+  {
+    path: 'services/weight-loss',
+    component: WeightLossComponent,
+  },
   { path: '**', redirectTo: '' },
 ];
+
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+};
 
 @NgModule({
   declarations: [
@@ -62,7 +112,7 @@ const appRoutes: Routes = [
     LocationComponent,
     SeenTodayComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes, routerOptions)],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

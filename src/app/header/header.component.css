@@ -25,6 +25,7 @@ header {
 
 .nav-brand-logo {
   height: 60px;
+  cursor: pointer;
 }
 
 .header-container .header-nav-links {
