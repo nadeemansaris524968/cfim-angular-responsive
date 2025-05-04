@@ -9,7 +9,6 @@
 .location-container h2 {
   font-size: var(--h2-font-size);
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--brand-color);
 }
 
 .location-container a {
@@ -27,6 +26,12 @@
 
 .location-details {
   text-align: center;
+}
+
+@media only screen and (min-width: 425px) {
+  .location-container h2 {
+    border-bottom: 2px solid var(--brand-color);
+  }
 }
 
 @media only screen and (min-width: 768px) {
