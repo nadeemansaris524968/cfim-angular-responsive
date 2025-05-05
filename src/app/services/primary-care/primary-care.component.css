@@ -78,21 +78,8 @@ section {
 
 @media only screen and (min-width: 320px) {
   .main {
-    padding-top: 9rem;
     width: 90%;
     margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  .main {
-    padding-top: 8.5rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .main {
-    padding-top: 7rem;
   }
 }
 

@@ -6,7 +6,7 @@
     <div class="header-nav-links">
       <a href="#about" class="header-link">About</a>
       <a href="#services" class="header-link">Services</a>
-      <a href="#reviews" class="header-link">Reviews</a>
+      <a [routerLink]="['/reviews']" class="header-link">Reviews</a>
       <a href="#location" class="header-link">Contact</a>
     </div>
     <div class="header-contact-links">
@@ -25,8 +25,7 @@
   <div class="mobile-header-links">
     <a href="" class="header-link">About</a>
     <a href="#services" class="header-link">Services</a>
-    <a href="" class="header-link">Reviews</a>
-    <a href="#location" class="header-link">Contact</a>
+    <a [routerLink]="['/reviews']" class="header-link">Reviews</a>
   </div>
   <div class="mobile-contact-links">
     <a href="tel:9493395272" class="header-link contact-reg">(949)-339-5272</a>

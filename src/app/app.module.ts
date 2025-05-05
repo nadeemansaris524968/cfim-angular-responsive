@@ -12,6 +12,7 @@ import { LocationComponent } from './location/location.component';
 import { MainComponent } from './main/main.component';
 import { MissionComponent } from './mission/mission.component';
 import { QocComponent } from './qoc/qoc.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 import { SeenTodayComponent } from './seen-today/seen-today.component';
 import { ServicesOfferedComponent } from './services-offered/services-offered.component';
 import { AllergiesComponent } from './services/allergies/allergies.component';
@@ -75,6 +76,10 @@ const appRoutes: Routes = [
     path: 'services/weight-loss',
     component: WeightLossComponent,
   },
+  {
+    path: 'reviews',
+    component: ReviewsComponent,
+  },
   { path: '**', redirectTo: '' },
 ];
 
@@ -111,6 +116,7 @@ const routerOptions: ExtraOptions = {
     AllergiesComponent,
     LocationComponent,
     SeenTodayComponent,
+    ReviewsComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes, routerOptions)],
   bootstrap: [AppComponent],

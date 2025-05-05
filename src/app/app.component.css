@@ -1,0 +1,17 @@
+@media only screen and (min-width: 320px) {
+  .container {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: 339px) {
+  .container {
+    margin-top: 9rem;
+  }
+}
+
+@media only screen and (min-width: 654px) {
+  .container {
+    margin-top: 7.5rem;
+  }
+}
