@@ -12,6 +12,7 @@ import { InsuranceComponent } from './insurance/insurance.component';
 import { LocationComponent } from './location/location.component';
 import { MainComponent } from './main/main.component';
 import { MissionComponent } from './mission/mission.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { QocComponent } from './qoc/qoc.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SeenTodayComponent } from './seen-today/seen-today.component';
@@ -85,6 +86,10 @@ const appRoutes: Routes = [
     path: 'about',
     component: AboutComponent,
   },
+  {
+    path: 'privacy-policy',
+    component: PrivacyPolicyComponent,
+  },
   { path: '**', redirectTo: '' },
 ];
 
@@ -123,6 +128,7 @@ const routerOptions: ExtraOptions = {
     SeenTodayComponent,
     ReviewsComponent,
     AboutComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes, routerOptions)],
   bootstrap: [AppComponent],
