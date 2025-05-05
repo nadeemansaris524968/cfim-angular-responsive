@@ -1,10 +1,19 @@
 <section class="reviews">
+  <h1>Reviews</h1>
   <div class="container">
-    <article>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt laudantium cupiditate. Vitae nulla
-        explicabo quisquam nobis ea ratione facilis. Ut, consequuntur hic aliquid architecto minima iusto laborum
-        tenetur corrupti.</p>
-      <i class="fa-solid fa-star"></i>
+    <article class="review-card" *ngFor="let reviewItem of reviews">
+      <p class="reviewer">{{reviewItem.reviewer}}</p>
+      <div class="rating-date"><span>{{reviewItem.reviewDate}}</span></div>
+      <div class="rating-info">
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <p>{{reviewItem.review}}</p>
     </article>
   </div>
 </section>
