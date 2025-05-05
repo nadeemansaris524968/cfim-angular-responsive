@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { CredentialsComponent } from './credentials/credentials.component';
@@ -80,6 +81,10 @@ const appRoutes: Routes = [
     path: 'reviews',
     component: ReviewsComponent,
   },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
   { path: '**', redirectTo: '' },
 ];
 
@@ -117,6 +122,7 @@ const routerOptions: ExtraOptions = {
     LocationComponent,
     SeenTodayComponent,
     ReviewsComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes, routerOptions)],
   bootstrap: [AppComponent],

@@ -1,0 +1,73 @@
+.about {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.container h1 {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.container h2 {
+  text-transform: capitalize;
+  font-size: var(--h3-font-size);
+  text-align: center;
+}
+
+.container .profile-photo-container {
+  width: 100%;
+}
+
+.profile-photo-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 425px) {
+  .about-para {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-para {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .container h2,
+  .about-para {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  .container {
+    width: 70%;
+  }
+
+  .about-para {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+}
