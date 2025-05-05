@@ -1,48 +1,17 @@
-footer {
-  margin-top: 3rem;
+.footer {
+  width: 100%;
   display: grid;
-  grid-template-areas:
-    'logo phone-number'
-    'logo address';
-  column-gap: 1rem;
-  row-gap: 1rem;
-  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--brand-color);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
 }
 
-.footer-link {
-  text-align: center;
+a {
   text-decoration: none;
   color: white;
-  align-self: center;
-  justify-self: center;
-}
-
-.footer-logo {
-  grid-area: logo;
-  height: 70px;
-  align-self: center;
-  justify-self: center;
-}
-
-#footer-phone-number {
-  grid-area: phone-number;
-}
-
-#footer-address {
-  grid-area: address;
-}
-
-@media only screen and (min-width: 425px) {
-  .footer-logo {
-    height: 120px;
-  }
-}
-
-@media only screen and (min-width: 1050px) {
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
