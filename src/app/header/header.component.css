@@ -134,14 +134,15 @@ header {
 
 .mobile-nav .mobile-header-links,
 .mobile-nav .mobile-contact-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  row-gap: 1rem;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
-.mobile-nav a {
-  margin: 1rem;
+.mobile-contact-links .header-link {
+  font-size: 0.9rem;
 }
 
 @media only screen and (min-width: 600px) {
