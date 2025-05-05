@@ -45,7 +45,7 @@ header {
 }
 
 .header-link.contact-reg {
-  padding: 1rem;
+  padding: 1rem 0.75rem;
   border-radius: 10px;
   border: 1px solid var(--brand-color);
 }
@@ -53,7 +53,7 @@ header {
 .header-link.contact-inv {
   color: white;
   background-color: var(--brand-color);
-  padding: 1rem;
+  padding: 1rem 0.75rem;
   border-radius: 10px;
 }
 
@@ -123,9 +123,8 @@ header {
   background-color: white;
   transition: transform 0.5s ease;
   box-shadow: 4px 4px 20px var(--brand-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
