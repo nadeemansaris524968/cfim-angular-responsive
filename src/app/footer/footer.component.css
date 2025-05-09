@@ -1,12 +1,9 @@
 .footer {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   background-color: var(--brand-color);
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   box-sizing: border-box;
   margin-top: 2rem;
 }
@@ -14,4 +11,35 @@
 a {
   text-decoration: none;
   color: white;
+  align-self: center;
+}
+
+a.book-now {
+  background-color: white;
+  color: var(--brand-color);
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 320px) {
+  .footer {
+    align-items: center;
+    text-align: center;
+  }
+
+  a.book-now {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  a.book-now {
+    margin: 0;
+  }
 }
