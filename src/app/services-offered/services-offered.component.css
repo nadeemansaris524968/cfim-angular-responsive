@@ -70,10 +70,15 @@ section h2 {
   }
 }
 
+@media only screen and (min-width: 1279px) {
+  .services-offered-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .services-offered-container {
     width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
