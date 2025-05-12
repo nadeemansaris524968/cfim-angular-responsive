@@ -37,6 +37,14 @@ header {
   display: none;
 }
 
+.header-contact-links a {
+  transition: transform 0.2s ease;
+}
+
+.header-contact-links a:hover {
+  transform: scale(1.1);
+}
+
 .header-link {
   text-transform: uppercase;
   color: var(--brand-color);

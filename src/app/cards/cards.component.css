@@ -23,6 +23,11 @@
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card i {
   font-size: 2.5rem;
 }
