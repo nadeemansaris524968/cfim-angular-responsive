@@ -59,7 +59,7 @@
 @media only screen and (min-width: 1279px) {
   .profile-para {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 2rem;
     margin-top: 2rem;
   }
@@ -75,6 +75,6 @@
 
 @media only screen and (min-width: 1440px) {
   .container {
-    width: 80%;
+    width: 60%;
   }
 }
