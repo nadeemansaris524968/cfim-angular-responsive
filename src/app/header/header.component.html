@@ -1,11 +1,11 @@
 <header>
   <p class="patient-visit">Patient visits by Appointment Only. Same Day appointments can be made by Phone call.</p>
   <div class="header-container">
-    <img src="cfim-logo-updated-large-narrow.jpg" [routerLink]="['/']" class="nav-brand-logo"
-      alt="California Functional Internal Medicine logo">
+    <img src="cfim-logo-updated-large-narrow.jpg" [routerLink]="['/']" (click)="isToggled = false"
+      class="nav-brand-logo" alt="California Functional Internal Medicine logo">
     <div class="header-nav-links">
       <a [routerLink]="['/about']" class="header-link">Meet Dr. Ansari</a>
-      <a href="#services" class="header-link">Services</a>
+      <a [routerLink]="['/']" fragment="services" class="header-link">Services</a>
       <a [routerLink]="['/reviews']" class="header-link">Reviews</a>
     </div>
     <div class="header-contact-links">
@@ -26,9 +26,9 @@
 </header>
 <nav class="mobile-nav" [ngClass]="{'drawer-open': isToggled}">
   <div class="mobile-header-links">
-    <a [routerLink]="['/about']" class="header-link">Meet Dr. Ansari</a>
-    <a href="#services" class="header-link">Services</a>
-    <a [routerLink]="['/reviews']" class="header-link">Reviews</a>
+    <a [routerLink]="['/about']" class="header-link" (click)="toggleHamburger()">Meet Dr. Ansari</a>
+    <a [routerLink]="['/']" fragment="services" class="header-link" (click)="toggleHamburger()">Services</a>
+    <a [routerLink]="['/reviews']" class="header-link" (click)="toggleHamburger()">Reviews</a>
   </div>
   <div class="mobile-contact-links">
     <a href="tel:9493395272" class="header-link contact-reg">(949)-339-5272</a>

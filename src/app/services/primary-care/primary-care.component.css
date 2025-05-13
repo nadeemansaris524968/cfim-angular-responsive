@@ -8,6 +8,12 @@ section {
   width: 100%;
 }
 
+.main a {
+  text-decoration: none;
+  color: var(--brand-color);
+  margin-top: 1rem;
+}
+
 .main h1 {
   text-align: center;
   font-size: 2.5rem;
