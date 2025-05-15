@@ -50,10 +50,6 @@
     width: 100%;
     height: 300px;
   }
-  .map-container .location-details {
-    align-self: center;
-    justify-self: flex-start;
-  }
 
   .location-details h3 {
     margin-top: 0;
