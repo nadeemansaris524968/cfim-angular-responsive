@@ -72,24 +72,21 @@ header {
   height: 3px;
   background-color: var(--brand-color);
   margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.animation-bar1 {
-  animation-name: flipBar1;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+/* Transformed states when toggled */
+.bar1.transformed {
+  transform: rotate(45deg) translate(4px, 6px);
 }
 
-.animation-bar2 {
-  animation-name: fadeBar2;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+.bar2.transformed {
+  opacity: 0;
+  transform: scale(0);
 }
 
-.animation-bar3 {
-  animation-name: flipBar3;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+.bar3.transformed {
+  transform: rotate(-45deg) translate(4px, -6px);
 }
 
 @keyframes flipBar1 {
