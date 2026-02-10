@@ -1,15 +1,18 @@
 section {
+  padding: 3rem 0;
   width: 100%;
   box-sizing: border-box;
   margin: 3rem 0;
-  padding: 2rem 0;
   background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(
-      315deg,
-      #00ffff2e 92%,
-      #073aff00 100%
-    ),
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image:
+    repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
     radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
     radial-gradient(160% 154% at 711px -303px, #236daf 0%, #073affff 100%),
     radial-gradient(160% 154% at 711px -303px, #236 0%, #073affff 100%);
