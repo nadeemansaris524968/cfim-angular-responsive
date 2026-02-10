@@ -30,11 +30,6 @@ a {
 }
 
 @media only screen and (min-width: 320px) {
-  .footer-links {
-    align-items: center;
-    text-align: center;
-  }
-
   a.book-now {
     margin: 1rem;
   }
@@ -43,17 +38,10 @@ a {
 @media only screen and (min-width: 768px) {
   .footer-links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  a {
-    align-self: flex-start;
+    grid-template-columns: 1fr 1fr;
   }
 
   a.book-now {
     margin: 0;
-  }
-
-  a.privacy-policy {
-    justify-self: flex-start;
   }
 }
