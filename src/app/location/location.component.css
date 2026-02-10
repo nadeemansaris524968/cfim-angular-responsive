@@ -10,6 +10,7 @@
   font-size: var(--h2-font-size);
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .location-container a {
