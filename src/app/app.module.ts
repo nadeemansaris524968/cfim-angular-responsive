@@ -33,7 +33,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
-  { path: 'services/primary-care', component: PrimaryCareComponent },
+  // { path: 'services/primary-care', component: PrimaryCareComponent },
   {
     path: 'services/functional-medicine',
     component: FunctionalMedicineComponent,
@@ -46,18 +46,18 @@ const appRoutes: Routes = [
     path: 'services/leaky-gut',
     component: LeakyGutComponent,
   },
-  {
-    path: 'services/hypertension',
-    component: HypertensionComponent,
-  },
-  {
-    path: 'services/diabetes',
-    component: DiabetesComponent,
-  },
-  {
-    path: 'services/cholestrol',
-    component: CholestrolComponent,
-  },
+  // {
+  //   path: 'services/hypertension',
+  //   component: HypertensionComponent,
+  // },
+  // {
+  //   path: 'services/diabetes',
+  //   component: DiabetesComponent,
+  // },
+  // {
+  //   path: 'services/cholestrol',
+  //   component: CholestrolComponent,
+  // },
   {
     path: 'services/heavy-metal-toxicity',
     component: HeavyMetalComponent,
